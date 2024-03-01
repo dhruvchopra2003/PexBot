@@ -3,7 +3,8 @@ import openai
 import csv
 # import schedule
 
-st.title("RealSmart Chat Interface")
+st.title("Meet PexChat")
+st.subheader("The Brains of the TOP real estate agents of India")
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
