@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 import csv
-import schedule
+# import schedule
 
 st.title("RealSmart Chat Interface")
 
@@ -60,10 +60,10 @@ def save_history(messages):
         for role, text in st.session_state["chat_history"]:
             file.write(f"{role}: {text}\n")
 
-save_history(st.session_state["chat_history"])
+# save_history(st.session_state["chat_history"])
 
 # Schedule the saving of chat history every 2 minutes
-schedule.every(2).minutes.do(save_history, st.session_state["chat_history"])
+# schedule.every(2).minutes.do(save_history, st.session_state["chat_history"])
 
 
 if user_input.strip() != "":
