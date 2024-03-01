@@ -5,7 +5,7 @@ import csv
 
 st.title("RealSmart Chat Interface")
 
-openai.api_key = "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"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 csv_file_path = "top_projects.csv"
 
