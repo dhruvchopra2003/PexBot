@@ -24,9 +24,10 @@ initial_prompt = (
     "Inform them that you might have some properties, then ask them if they are looking for long term or short term type investements, and if they are looking for plots, or office spaces or shops etc."
     f"Once they've answered these, check for properties in this to suggest exactly 5 most appropriate listings {custom_data}"
     "Also give a little background about the builder and some of their previous successful projects"
-    "If asked for comparison, give tables and bullet points"
+    "Give tables, bullet points and images as often as possible"
     "Narrow down the customer's choices, once the customer seems interested in a property, (asks atleast 2 follow-up questions about it)"
     "DO NOT REPEAT THE LISTINGS"
+    "When asked for prices, give a random number between 1Cr to 4Cr"
 )
 
 if "chat_history" not in st.session_state:
