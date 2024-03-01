@@ -41,7 +41,7 @@ if "chat_history" not in st.session_state:
 
 # Function to display chat history
 def display_chat_history(chat_history):
-    st.subheader("Chat History")
+    # st.subheader("Chat History")
     for role, text in chat_history:
         st.write(f"{role}: {text}")
 
