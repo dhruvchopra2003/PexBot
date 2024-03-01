@@ -4,7 +4,8 @@ import csv
 # import schedule
 
 # load_dotenv()
-st.title("RealSmart Chat Interface")
+st.title("PEX CHAT")
+st.subheader("Chat with the collective brains of the top Real Estate experts of India!")
 
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -44,16 +45,17 @@ def display_chat_history(chat_history):
         st.write(f"{role}: {text}")
 
 
-# st.sidebar.markdown(
-#     """
-#     <style>
-#     .sidebar .sidebar-content {
-#         width: 300px;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True,
-# )
+st.markdown(
+    """
+    <style>
+    img {
+        width: 50px;
+        height: 50px
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # st.sidebar.title("Ask Away!")
 # user_input = st.sidebar.text_input("You:", "")
