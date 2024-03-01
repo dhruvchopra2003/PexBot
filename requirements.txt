@@ -1,5 +1,3 @@
 streamlit
-openai==0.28
 schedule
-csv
-json
+openai==0.28
