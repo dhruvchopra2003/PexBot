@@ -1,13 +1,15 @@
 import streamlit as st
 import openai
 import csv
-import schedule
+# import schedule
 
+# load_dotenv()
 st.title("RealSmart Chat Interface")
 
-openai.api_key = "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"
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-csv_file_path = "top_projects.csv"
+csv_file_path = "./data/top_projects.csv"
 
 # Read content from the CSV file
 custom_data = ""
@@ -18,15 +20,17 @@ with open(csv_file_path, "r", newline="", encoding="utf-8") as file:
         custom_data += " ".join(row) + "\n"
 
 initial_prompt = (
-    "You are a real estate expert assisting customers with finding commercial properties in the NCR (National Capital Region) of India."
+    "You are a real estate expert assisting customers with finding ONLY commercial properties in the NCR (National Capital Region) of India."
     "MAKE ALL YOUR CONVERSATIONS FEEL NATURAL AND HUMAN"
-    "Before making any suggestion, Get to know the customer's requirements: ask about their prefered city, and any specific locality they are looking for first. Ask one question and wait for the user's answer, before asking the next"
-    "Inform them that you might have some properties, then ask them if they are looking for long term or short term type investements, and if they are looking for plots, or office spaces or shops etc."
-    f"Once they've answered these, check for properties in this to suggest exactly 5 most appropriate listings {custom_data}"
-    "Also give a little background about the builder and some of their previous successful projects"
-    "If asked for comparison, give tables and bullet points"
-    "Narrow down the customer's choices, once the customer seems interested in a property, (asks atleast 2 follow-up questions about it)"
-    "DO NOT REPEAT THE LISTINGS"
+    # "Before making any suggestion, Get to know the customer's requirements: ask about their prefered city, and any specific locality they are looking for first. Ask one question and wait for the user's answer, before asking the next"
+    # "Inform them that you might have some properties, then ask them if they are looking for long term or short term type investements, and if they are looking for plots, or office spaces or shops etc."
+    "Before making suggestions, ask the user about these, one at a time,preferred city, preferred locality, long/short term returns, if they are looking for plots/offices/shops etc"
+    f"Once they've answered these, check for properties in this to suggest exactly 5 most appropriate listings from {custom_data}, NEVER REPEAT LISTINGS"
+    "Prices of all lie in between 65lacs to 4Cr, chose and give any random number in between"
+    "Give a little background about the builder you suggest and some of their previous successful projects"
+    "Give tables and images wherever possible"
+    "Narrow down the customer's choices, once the customer seems interested in a property, inquire how they want to be contacted, their name, number and city of residence"
+    "Only answer real estate related questions"
 )
 
 if "chat_history" not in st.session_state:
@@ -40,19 +44,20 @@ def display_chat_history(chat_history):
         st.write(f"{role}: {text}")
 
 
-st.sidebar.markdown(
-    """
-    <style>
-    .sidebar .sidebar-content {
-        width: 300px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+# st.sidebar.markdown(
+#     """
+#     <style>
+#     .sidebar .sidebar-content {
+#         width: 300px;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
 
-st.sidebar.title("Ask Away!")
-user_input = st.sidebar.text_input("You:", "")
+# st.sidebar.title("Ask Away!")
+# user_input = st.sidebar.text_input("You:", "")
+user_input = st.chat_input("Suggest the best properties in Gurgaon")
 
 
 def save_history(messages):
@@ -60,13 +65,14 @@ def save_history(messages):
         for role, text in st.session_state["chat_history"]:
             file.write(f"{role}: {text}\n")
 
-save_history(st.session_state["chat_history"])
 
-# Schedule the saving of chat history every 2 minutes
-schedule.every(2).minutes.do(save_history, st.session_state["chat_history"])
+# save_history(st.session_state["chat_history"])
+
+# # Schedule the saving of chat history every 2 minutes
+# schedule.every(2).minutes.do(save_history, st.session_state["chat_history"])
 
 
-if user_input.strip() != "":
+if user_input != None and user_input.strip() != "":
     input_message = ("user", user_input)  # Set role to 'user' for user input
     user_input = ""
     st.session_state["chat_history"].append(input_message)
