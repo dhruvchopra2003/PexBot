@@ -10,7 +10,7 @@ st.subheader("Chat with the collective brains of the top Real Estate experts of 
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-csv_file_path = "./data/top_projects.csv"
+csv_file_path = "./top_projects.csv"
 
 # Read content from the CSV file
 custom_data = ""
