@@ -32,6 +32,7 @@ initial_prompt = (
     "Give more information to user about the properties they are likely to chose." 
     "Inquire how they want to be contacted, their name, number and city of residence"
     "Only answer real estate related questions"
+    "End a complete conversation with the Line 'Happy investing'"
 )
 
 if "chat_history" not in st.session_state:
