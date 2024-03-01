@@ -45,16 +45,17 @@ def display_chat_history(chat_history):
         st.write(f"{role}: {text}")
 
 
-# st.sidebar.markdown(
-#     """
-#     <style>
-#     .sidebar .sidebar-content {
-#         width: 300px;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True,
-# )
+st.markdown(
+    """
+    <style>
+    img {
+        width: 50px;
+        height: 50px
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # st.sidebar.title("Ask Away!")
 # user_input = st.sidebar.text_input("You:", "")
