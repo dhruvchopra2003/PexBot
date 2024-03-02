@@ -7,9 +7,6 @@ import csv
 st.title("PEX CHAT")
 st.subheader("Chat with the collective brains of the top Real Estate experts of India!")
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-st.title("PEX CHAT")
-st.subheader("Chat with the collective brains of the top Real Estate experts of India!")
-
 
 def get_custom_data(csv_file_path):
     custom_data = ""
