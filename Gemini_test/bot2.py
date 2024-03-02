@@ -46,7 +46,10 @@ if "chat_history" not in st.session_state:
 def display_chat_history(chat_history):
     # st.subheader("Chat History")
     for role, text in chat_history:
-        st.write(f"{role}: {text}")
+        if role == 'assistant':
+            st.write(f"PexBot: {text}")
+        else:
+            st.write(f"{role}: {text}")
 
 
 st.markdown(
@@ -94,7 +97,7 @@ if user_input != None and user_input.strip() != "":
     )
 
     chatgpt_reply = response.choices[0].message.content.strip()
-    bot_message = ("PexBot", chatgpt_reply)  # Set role to 'assistant' for bot reply
+    bot_message = ("assistant", chatgpt_reply)  # Set role to 'assistant' for bot reply
     # bot_message = ("assistant", chatgpt_reply)  # Set role to 'assistant' for bot reply
     st.session_state["chat_history"].append(bot_message)
     display_chat_history(st.session_state["chat_history"])
