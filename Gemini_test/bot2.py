@@ -50,7 +50,10 @@ if "chat_history" not in st.session_state:
 def display_chat_history(chat_history):
     # st.subheader("Chat History")
     for role, text in chat_history:
-        st.write(f"{role}: {text}")
+        if role == "assistant":
+            st.write(f"PexBot: {text}")
+        else:
+            st.write(f"You: {text}")
 
 
 st.markdown(
