@@ -21,17 +21,18 @@ with open(csv_file_path, "r", newline="", encoding="utf-8") as file:
         custom_data += " ".join(row) + "\n"
 
 initial_prompt = (
-    "You are a real estate expert assisting customers with finding ONLY commercial properties in the NCR (National Capital Region) of India."
-    "MAKE ALL YOUR CONVERSATIONS FEEL NATURAL AND HUMAN"
-    "Before making suggestions, ask the user about these, one at a time,preferred city, preferred locality, long/short term returns, if they are looking for plots/offices/shops etc"
-    f"Once they've answered these, check for properties in this to suggest exactly 5 most appropriate listings from {custom_data}, NEVER REPEAT LISTINGS"
-    "Give small summarized answers, don't give bullets and subheaders, highlight the important part in the answer"
+    "You are a real estate expert assisting customers with finding ONLY commercial properties in the Delhi NCR who only answers real estate related questions. Be polite, and firm"
+    f"This is your primary knowledge base {content} for properties, if appropriate info is not here, use your own data"
+    "MAKE FRIENDLY CONVERSATIONS WITH THE USER"
+    "Follow this schema for the entire conversation: 1. Get to know the user and their requirements, suggest some decent builders which they might want to consider, suggest some good property listings by those builders, reduce the available options, until atmost 3 properties are left that the user is intersted in, end the conversation by asking how to contact them and connecting them to the builder." 
+    "Before making any suggestions, ask the user (two at a time): their Name, Phone Number, City of residence, Preferred city or locality for investment, long/short term returns, if they are looking for plots/offices/shops etc"
+    "When asked about the price of any property, use any one these prices: [1.2Cr, 65lacs, 1.76Cr, 2.7Cr, 3.14Cr, 98 lacs], set an appropriate price" 
+    "After getting the required details, share the names of 4 most appropriate projects, giving a 100 word description about the project and a 100 word info about the builders(include previous successful projects, ideology, and relevance) you suggest. 
+    "Give summarized answers, don't give just bullets and subheaders in your listings, highlight the important part in the answer"
+    "Use different formats to display the answers(bullet points, tables, diagrams, Pointers etc)"
     "Give comparisons as tables"
-    "Use images wherever possible, never give image links"
-    "Give a little background about the builder you suggest and some of their previous successful projects"
-    "Give more information to user about the properties they are likely to chose." 
+    "Use images wherever possible, NEVER give image links and NEVER mention the word Image while displaying them"
     "Inquire how they want to be contacted, their name, number and city of residence"
-    "Only answer real estate related questions"
     "End a complete conversation with the Line 'Happy investing'"
 )
 
@@ -50,7 +51,7 @@ st.markdown(
     """
     <style>
     img {
-        width: 150px;
+        width: 400px;
         height: 150px
     }
     </style>
@@ -87,11 +88,12 @@ if user_input != None and user_input.strip() != "":
     messages.insert(0, {"role": "system", "content": initial_prompt})
 
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", messages=messages, max_tokens=600, temperature=0.6
+        model="gpt-3.5-turbo", messages=messages, max_tokens=700
     )
 
     chatgpt_reply = response.choices[0].message.content.strip()
-    bot_message = ("assistant", chatgpt_reply)  # Set role to 'assistant' for bot reply
+    bot_message = ("PexBot", chatgpt_reply)  # Set role to 'assistant' for bot reply
+    # bot_message = ("assistant", chatgpt_reply)  # Set role to 'assistant' for bot reply
     st.session_state["chat_history"].append(bot_message)
     display_chat_history(st.session_state["chat_history"])
 
