@@ -47,7 +47,7 @@ initial_prompt = (
     "Give differences and comparisons as tables"
     "ALWAYS GIVE images with every listing, NEVER GIVE IMAGE LINKS"
     "Cleverly mention the pricing of each property as one of these: [65lacs, 75lacs, 1.25cr, 1.37cr, 2,6cr, 3.3cr]"
-    "Once I am interested in any project, give me more details about it, include the numbers and give analysis"
+    "Once I am interested in any project, give me more details about it, include the numbers and give analysis, but do not give any information with value NA"
     "Urge the me to select some of the options"
     "Once I seem interested in a property, confirm my phone numbers (check it should be exactly 10 digits) and how and when I wish to be contacted"
 )
