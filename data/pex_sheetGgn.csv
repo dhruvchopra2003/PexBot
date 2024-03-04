@@ -1,0 +1,85 @@
+Builder,Project,Location,Sector,Floor,Price,Min. Size,Max. Size,AR,Leased Brand/ Type,LG,Lock-in Period,Lease Period,Possession Period,,CA,Payment Plan,Min. Investment,LG,Annual LG,AR ,AR Adjusted,ROI
+Bhutani Infra,Alphathum,Noida,Sector 90,16F,"12,700",100,500,NA,GEENTANJALI,70,,,NA,,,,1270000,19.2,230.4,NA,NA,0.02%
+Bhutani Infra,Alphathum,Noida,Sector 90,7F,"12,700",350,,NA,ALCOI,70,,,NA,,,,4445000,24500,294000,NA,NA,6.61%
+M3M,Atrium,Gurgaon,Sector 57,LGF,"25,000",320,,12%,Retail,6%,,,5,,,,8000000,19.2,230.4,400000,"7,600,000",0.00%
+M3M,Atrium,Gurgaon,Sector 57,3F,"21,900",680,,12%,Food Court,6%,,,5,,,,14892000,40.8,489.6,744600,"14,147,400",0.00%
+M3M,Atrium,Gurgaon,Sector 57,1F,"29,300",530,,12%,Retail,6%,,,5,,,,15529000,31.8,381.6,776450,"14,752,550",0.00%
+M3M,Atrium,Gurgaon,Sector 57,2F,"25,900",660,,12%,Retail,6%,,,5,,,,17094000,39.6,475.2,854700,"16,239,300",0.00%
+M3M,Atrium,Gurgaon,Sector 57,GF,"43,900",1200,,12%,Retail,6%,,,5,,,,52680000,72,864,2634000,"50,046,000",0.00%
+Paras ,Avenue,Noida,Sector 129,1F,"29,000",250,,120,Retail,NA,,,36,,,,7250000,#VALUE!,#VALUE!,2610000000,"-2,602,750,000",#VALUE!
+Paras ,Avenue,Noida,Sector 129,2F,"22,000",350,,100,Retail,NA,,,36,,,,7700000,#VALUE!,#VALUE!,2310000000,"-2,302,300,000",#VALUE!
+Paras ,Avenue,Noida,Sector 129,3F,"20,000",350,,80,Retail,NA,,,36,,,,7000000,#VALUE!,#VALUE!,1680000000,"-1,673,000,000",#VALUE!
+Paras ,Avenue,Noida,Sector 129,LGF,"31,000",250,,125,Hyper Market (Spencer),125,,,,,,,7750000,31250,375000,0,"7,750,000",4.84%
+Bhutani Infra,Avenue 62,Noida,Sector 62,LGF,"23,000",100,,12%,Retail,150,,,20,,,,2300000,15000,180000,460000,"1,840,000",9.78%
+Bhutani Infra,Avenue 62,Noida,Sector 62,1F,"27,000",100,,12%,Retail,175,,,20,,,50:25:25,2700000,17500,210000,540000,"2,160,000",9.72%
+Bhutani Infra,Avenue 62,Noida,Sector 62,2F,"27,000",100,,12%,Retail,165,,,20,,,51:25:25,2700000,16500,198000,540000,"2,160,000",9.17%
+Bhutani Infra,Avenue 62,Noida,Sector 62,GF,"30,000",100,,12%,Lockable,180,,,20,,,,3000000,18000,216000,600000,"2,400,000",9.00%
+Bhutani Infra,Avenue 62,Noida,Sector 62,4F,"18,990",200,,NA,Retail,138,,,20,,,,3798000,27600,331200,NA,NA,8.72%
+Omaxe,Chowk,North Delhi,Chandni Chowk,2F,"145,000",40,,12%,Food Court,9%,,,4,,,60:40:00,5800000,3.6,43.2,232000,"5,568,000",0.00%
+Omaxe,Chowk,North Delhi,Chandni Chowk,1F,"165,000",40,,12%,Retail,9%,,,4,,,60:40:00,6600000,3.6,43.2,264000,"6,336,000",0.00%
+Omaxe,Chowk,North Delhi,Chandni Chowk,GF,"200,000",40,,12%,Retail,9%,,,4,,,60:40:00,8000000,3.6,43.2,320000,"7,680,000",0.00%
+Bhutani Infra,City-Center 150,Noida,Sector 150,LGF,"27,000",100,,12%,High-street,175,,,5,,,,2700000,17500,210000,135000,"2,565,000",8.19%
+Bhutani Infra,City-Center 150,Noida,Sector 150,1F,"27,000",100,,12%,High-street,175,,,5,,,,2700000,17500,210000,135000,"2,565,000",8.19%
+Bhutani Infra,City-Center 150,Noida,Sector 150,2F,"27,000",100,,12%,High-street,165,,,5,,,,2700000,16500,198000,135000,"2,565,000",7.72%
+Bhutani Infra,City-Center 150,Noida,Sector 150,GF,"28,000",500,,NA,Lockable,180,,,5,,,,14000000,90000,1080000,NA,NA,7.71%
+Bhutani Infra,Cyberthum,Noida,Sector 140,UGF,"21,000",100,,12%,Retail,150,,,18,,,,2100000,15000,180000,378000,"1,722,000",10.45%
+Bhutani Infra,Cyberthum,Noida,Sector 140,,"7,250",582,,12%,Office,40,,,18,,,,4219500,23280,279360,759510,"3,459,990",8.07%
+Bhutani Infra,Cyberthum,Noida,Sector 140,,"7,500",100,,12%,Office,40,,,18,,,,750000,4000,48000,135000,"615,000",7.80%
+Bhutani Infra,Cyberthum,Noida,Sector 140,GF,"28,990",250,,12%,Retail,140,,,18,,,,7247500,35000,420000,1304550,"5,942,950",7.07%
+Signature Global,Infinity Mall,Gurgaon,Sector 36,LGF,"20,557",121,600,NA,Deerika Hyper Market,3.5% revenue share whichever is higher on net sale for 1st year. From 2nd year Rs. 50 MG or 3.5 revenue share whichever is higher. From 3rd year Rs. 50 MG or 3.5 revenue share whichever is higher. CAM :- Rs. 5 per sqft.,3,18,28,,,,2487397,NA,NA,NA,NA,NA
+Signature Global,Infinity Mall,Gurgaon,Sector 36,4F,"12,557",200,600,NA,Duty Free,MG/ Revenue Share:- MG:- 12.51% Revenue share on net sale till 3 years. From 4th year average sale of 75% will be MG.,3,9,28,,,,2511400,NA,NA,NA,NA,NA
+Signature Global,Infinity Mall,Gurgaon,Sector 36,4F,"12,557",200,600,NA,Cineport,MG/ Revenue Share:- MG:- Rs 60 per Sqft. Or 25% Revenue share whichever is higher.,6,15,28,,,,2511400,NA,NA,NA,NA,NA
+Signature Global,Infinity Mall,Gurgaon,Sector 36,4F,"12,557",200,600,NA,BBQ Company,60,3,9,28,,,,2511400,12000,144000,NA,NA,5.73%
+Signature Global,Infinity Mall,Gurgaon,Sector 36,3F,"12,857",200,600,NA,Village Food Court,MG/Revenue Share:- MG:- Rs 60 per Sqft. Or 6-8% Revenue share whichever is higher,6,21,28,,,,2571400,NA,NA,NA,NA,NA
+Signature Global,Infinity Mall,Gurgaon,Sector 36,3F,"12,857",200,600,NA,Hello Entertainment Zone,60,4,15,28,,,,2571400,12000,144000,NA,NA,5.60%
+Signature Global,Infinity Mall,Gurgaon,Sector 36,2F,"14,807",180,600,NA,Masti Zone,100,3,12,,,,,2665260,18000,216000,NA,NA,8.10%
+Signature Global,Infinity Mall,Gurgaon,Sector 36,1F,"15,807",250,600,NA,Bikanerwala,MG/REVENUE SHARE: -7% revenue share whichever is higher for 2 years. After 2 years average sale of 6 months will be 75% MG,4,15,,,,,3951750,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Signature Global,Infinity Mall,Gurgaon,Sector 36,1F,"15,807",250,600,NA,"2-02 Nails,",100,3,9,,,,,3951750,25000,300000,NA,NA,7.59%
+Signature Global,Infinity Mall,Gurgaon,Sector 36,1F,"15,807",250,600,NA,3-Cosmistan,100,3,9,,,,,3951750,25000,300000,NA,NA,7.59%
+Signature Global,Infinity Mall,Gurgaon,Sector 36,5F,"12,057",400,600,NA,Cineport,MG/ Revenue Share:- MG:- Rs 60 per Sqft. Or 25% Revenue share whichever is higher.,6,15,,,,,4822800,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Signature Global,Infinity Mall,Gurgaon,Sector 36,5F,"12,057",400,600,NA,Duty Free,MG/Revenue Share:-MG:- 12.51% Revenue share on net sale till 3 years. From 4th year average sale of 75% will be MG.,3,9,,,,,4822800,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Signature Global,Infinity Mall,Gurgaon,Sector 36,UGF,"27,057",400,600,NA,Bikanerwala,MG/REVENUE SHARE:- 7% REVENUE SHARE WHICHEVER IS HIGHER FOR 2 YEARS. After 2 years average sale of 6 months will be 75% MG.,4,15,,,,,10822800,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+M3M,Jewel,Gurgaon,Sector 25,1F,"75,000",300,,12%,Virtual,NA,,,29,,,,22500000,NA,NA,6525000,"15,975,000",NA
+Vatika,Market Walk,Gurgaon,Sector 82A,1F,"21,400",1000,,9%,,115,,,13,,,10:30:60,21400000,115000,1380000,2086500,"19,313,500",7.15%
+Vatika,Market Walk,Gurgaon,Sector 82A,GF,"31,800",1000,,9%,,170,,,13,,,10:30:60,31800000,170000,2040000,3100500,"28,699,500",7.11%
+Paras,ONE33,Noida,Sector 133,LGF,"24,000",350,,NA,Hyper Market (Reliance),"75 MG or 3% revenue sharing, whichever is higher.",,,RTM,,,,8400000,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Elan,Paradise,Gurgaon,Sector 50,4F,"31,750",350,,12%,,200,,,46,,,,11112500,70000,840000,5111750,"6,000,750",14.00%
+Elan,Paradise,Gurgaon,Sector 50,2F,"33,750",350,,12%,,200,,,46,,,,11812500,70000,840000,5433750,"6,378,750",13.17%
+Elan,Paradise,Gurgaon,Sector 50,3F,"34,750",350,,12%,,200,,,46,,,,12162500,70000,840000,5594750,"6,567,750",12.79%
+Elan,Paradise,Gurgaon,Sector 50,1F,"37,750",350,,12%,,200,,,46,,,,13212500,70000,840000,6077750,"7,134,750",11.77%
+Elan,Paradise,Gurgaon,Sector 50,GF,"65,750",350,,12%,,200,,,46,,,,23012500,70000,840000,10585750,"12,426,750",6.76%
+Elan,Paradise,Gurgaon,Sector 50,LGF,"65,750",385,,12%,,200,,,46,,,36:05:00,25313750,77000,924000,11644325,"13,669,425",6.76%
+M3M,Paragon,Gurgaon,Sector 57,LGF,"22,500",350,,12%,,90,,,30,,,,7875000,31500,378000,2362500,"5,512,500",6.86%
+M3M,Paragon,Gurgaon,Sector 57,2F,"18,500",450,,12%,,75,,,30,,,,8325000,33750,405000,2497500,"5,827,500",6.95%
+M3M,Paragon,Gurgaon,Sector 57,1F,"24,500",900,,12%,Retail,110,,,30,,,,22050000,99000,1188000,6615000,"15,435,000",7.70%
+M3M,Paragon,Gurgaon,Sector 57,GF,"40,500",1100,,12%,,175,,,30,,,,44550000,192500,2310000,13365000,"31,185,000",7.41%
+M3M,Route 65,Gurgaon,Sector 65,2F,"17,500",800,,12%,Retail,75,,,43,,,,14000000,60000,720000,6020000,"7,980,000",9.02%
+M3M,Route 65,Gurgaon,Sector 65,1F,"27,500",800,,12%,Retail,110,,,43,,,,22000000,88000,1056000,9460000,"12,540,000",8.42%
+M3M,Route 65,Gurgaon,Sector 65,GF,"38,000",800,,12%,Retail,165,,,43,,,,30400000,132000,1584000,13072000,"17,328,000",9.14%
+M3M,Route 65,Gurgaon,Sector 65,,"17,500",3500,,12%,Restaurant,75,,,43,,,,61250000,262500,3150000,26337500,"34,912,500",9.02%
+Devika,Sadar Bazaar,Central Delhi,Sadar Bazaar,GF,"143,000",20,,12%,Retail,9%,,,5,,,,2860000,,0,143000,"2,717,000",0.00%
+Devika,Sadar Bazaar,Central Delhi,Sadar Bazaar,1F,"132,000",25,,12%,Retail,9%,,,5,,,,3300000,,0,165000,"3,135,000",0.00%
+Signature Global,Signum Plaza 79B,Gurgaon,Sector 79B,3F,"12,950",,,NA,Food Court,"1st year:-Revenue sharing -9% of net sales. 2nd year:-₹ 960 sq.ft MG pa or Rev share whichever is higher. 3rd year:-₹ 960 sq.ft MG pa or Rev share, whichever is higher. 15% rent escallation after every 3 year.",3,12,5,,,9:26:30:25:5:5,0,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Signature Global,Signum Plaza 81,Gurgaon,Sector 81,3F,"12,950",200,,NA,Food Court,"1st year:-Revenue sharing -9% of net sales. 2nd year:-₹ 960 sq.ft MG pa or Rev share whichever is higher. 3rd year:-₹ 960 sq.ft MG pa or Rev share, whichever is higher. 15% rent escallation after every 3 year.",3,12,NA,,,9:26:30:25:5:5,2590000,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Signature Global,Signum Plaza 93,Gurgaon,Sector 93,2F,"12,950",,,NA,Food Court,"1st year:-Revenue sharing -9% of net sales. 2nd year:-₹ 960 sq.ft MG pa or Rev share whichever is higher. 3rd year:-₹ 960 sq.ft MG pa or Rev share, whichever is higher. 15% rent escallation after every 3 year.",3,12,53,,,9:26:30:25:5:5,0,#VALUE!,#VALUE!,#VALUE!,#VALUE!,#VALUE!
+Spectrum,Spectrum@Metro,Noida,Sector 75,LGF,"32,000",400,,NA,,160,,,5,HDFC ,,,12800000,64000,768000,NA,NA,6.00%
+Spectrum,Spectrum@Metro,Noida,Sector 75,GF,"32,000",400,,NA,,160,,,5,HDFC ,,,12800000,64000,768000,NA,NA,6.00%
+Spectrum,Spectrum@Metro,Noida,Sector 75,LGF,"32,000",270,,NA,,160,,,5,HDFC ,,,8640000,43200,518400,NA,NA,6.00%
+Spectrum,Spectrum@Metro,Noida,Sector 75,GF,"32,000",270,,NA,,160,,,5,HDFC ,,,8640000,43200,518400,NA,NA,6.00%
+Spectrum,Spectrum@Metro,Noida,Sector 75,1F,"23,000",220,,NA,,130,,,5,HDFC ,,,5060000,28600,343200,NA,NA,6.78%
+Spectrum,Spectrum@Metro,Noida,Sector 75,2F,"20,000",220,,NA,,115,,,5,HDFC ,,,4400000,25300,303600,NA,NA,6.90%
+Spectrum,Spectrum@Metro,Noida,Sector 75,3F,"18,000",220,,NA,,100,,,5,HDFC ,,,3960000,22000,264000,NA,NA,6.67%
+Saya,Status,Noida,Sector 129,1F,"34,500",200,,NA,Retail,180,,,18,,,,6900000,36000,432000,NA,NA,6.26%
+Saya,Status,Noida,Sector 129,4F,"30,000",170,,NA,"Restaurant (Delhi Heights, Haldiram)",140,,,18,,,,5100000,23800,285600,NA,NA,#VALUE!
+Saya,Status,Noida,Sector 129,6F,"27,500",150,,NA,Retail,140,,,18,,,,4125000,21000,252000,NA,NA,#VALUE!
+Saya,Status,Noida,Sector 129,9F,"27,500",150,,NA,Retail,140,,,18,,,,4125000,21000,252000,NA,NA,NA
+Saya,Status,Noida,Sector 129,LGF,"39,500",180,,NA,Retail,210,,,,,,,7110000,37800,453600,#VALUE!,#VALUE!,6.38%
+Bhutani Infra,Techno Park,Noida,Sector 127,1F,"8,990",500,,NA,SNAPON,58,,,NA,,,,4495000,29000,348000,NA,NA,7.74%
+Bhutani Infra,Techno Park,Noida,Sector 127,GF,"24,750",250,,NA,MISOSEXY,145,,,NA,,,50:50 (1% of 50 for 10 months),6187500,36250,435000,NA,NA,7.03%
+Bhutani Infra,Techno Park,Noida,Sector 127,6F,"13,000",200,,12%,Office,75,,,NA,,,50:50:00,2600000,15000,180000,NA,NA,6.92%
+Elan,The Mark,Gurgaon,Sector 106,3F,"27,750",800,,12%,Food Court,200,,,35,,,30:30:40,22200000,160000,1920000,7770000,"14,430,000",13.31%
+Elan,The Mark,Gurgaon,Sector 106,1F,"27,750",1000,,12%,,200,,,35,,,30:30:40,27750000,200000,2400000,9712500,"18,037,500",13.31%
+Elan,The Mark,Gurgaon,Sector 106,1F,"27,750",1300,,12%,,200,,,35,,,,36075000,260000,3120000,12626250,"23,448,750",13.31%
+Elan,The Mark,Gurgaon,Sector 106,GF,"43,750",1300,,12%,,200,,,35,,,30:30:40,56875000,260000,3120000,19906250,"36,968,750",8.44%
+Elan,The Mark,Gurgaon,Sector 106,LGF,"43,750",1400,,12%,,200,,,35,,,30:30:40,61250000,280000,3360000,21437500,"39,812,500",8.44%
+Elan,The Mark,Gurgaon,Sector 106,GF,"43,750",2200,,12%,,200,,,35,,,,96250000,440000,5280000,33687500,"62,562,500",8.44%
