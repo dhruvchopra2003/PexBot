@@ -1,12 +1,19 @@
 import streamlit as st
 import openai
 import csv
+import os
+from dotenv import load_dotenv
+import schedule
 
+load_dotenv()
+try:
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+except:
+    openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-# load_dotenv()
 st.title("PEX CHAT")
 st.subheader("Chat with the collective brains of the top Real Estate experts of India!")
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+
 
 def get_custom_data(csv_file_path):
     custom_data = ""
@@ -20,26 +27,29 @@ def get_custom_data(csv_file_path):
 
 # openai.api_key = st.secrets['OPENAI_API_KEY']
 
-csv_file_path = "./data/top_projects2.csv"
-# csv_file_path2 = "./data/data3.csv"
-csv_file_path3 = "./data/projects.csv"
+file_paths = [
+    "./data/NCRProjects.csv",
+    "./data/pex_sheetNoida.csv",
+    "./data/pex_sheetGgn.csv",
+]
+
 # Read content from the CSV file
 custom_data = ""
-custom_data += get_custom_data(csv_file_path) + get_custom_data(csv_file_path3)
+for file in file_paths:
+    custom_data += get_custom_data(file)
 
 initial_prompt = (
     "You are PexBot, a real estate expert dealing in ONLY commercial properties in the Delhi NCR"
     f"Get your listings and projects data from {custom_data}, use your own data for the builder info"
-    "Begin by introducing yourself, and then ask for the following information from the user ONE QUESTION FOR ONE PIECE of info: Name, place of preference, type of property, long term or short term investment. Be subtle how you ask about this information and explain why you need each one. Ask me one question at a time. "
-    "After getting these answers, make sure to give a small summary of the requirements, and ask to proceed further"
-    "show the most appropriate properties, create a good description of the properties and the builders"
-    "you can give differences and comparisons in the form of tables"
-    "ALWAYS GIVE images with every listing, NEVER GIVE IMAGE LINKS, do not use the keyword 'image'."
+    "Begin by introducing yourself, and then ask for the following information from me ONE QUESTION FOR ONE PIECE of info: Place of Preference, type of property, investment metrics. Be subtle how you ask about this information and explain why you need each one. Ask me one question at a time. "
+    "After getting these answers, give a small summary of the requirements, and ask if you should proceed"
+    "If yes, follow this format: Project Name, the image, the builder, a paragraph (including it's features, something about the builder, and some more information (use 30 words)). Describe each listing smartly and humanly"
+    "Give differences and comparisons as tables"
+    "ALWAYS GIVE images with every listing, NEVER GIVE IMAGE LINKS"
     "Cleverly mention the pricing of each property as one of these: [65lacs, 75lacs, 1.25cr, 1.37cr, 2,6cr, 3.3cr]"
-    "Give a background of the builders and highlight their reliability"
-    "Once user is interested in any project, give them more detailed listings about it"
-    "Convince the user to select any of the options"
-    "Once the user is interested in a property, ask their phone numbers and how he wishes to be contacted"
+    "Once I am interested in any project, give me more details about it, include the numbers and give analysis"
+    "Urge the me to select some of the options"
+    "Once I seem interested in a property, ask my phone numbers (check it should be exactly 10 digits) and how I wish to be contacted"
 )
 
 if "chat_history" not in st.session_state:
@@ -51,9 +61,9 @@ def display_chat_history(chat_history):
     # st.subheader("Chat History")
     for role, text in chat_history:
         if role == "assistant":
-            st.write(f"PexBot: {text}")
+            st.write(f"PexBot:\n {text}")
         else:
-            st.write(f"You: {text}")
+            st.write(f"You:\n {text}")
 
 
 st.markdown(
@@ -72,10 +82,10 @@ st.markdown(
 user_input = st.chat_input("Suggest the best properties in Gurgaon")
 
 # First convo by the bot
-bot_message = "Hi there, I'm PexBot, the one stop solution to all your real estate related queries! So are you looking for any property?"
+bot_message = "Hi there, I'm PexBot, the one stop solution to all your real estate related queries! So what are you looking for?"
 
 
-st.write(f"PexBot : {bot_message}")
+st.write(f"PexBot: {bot_message}")
 
 
 messages = []

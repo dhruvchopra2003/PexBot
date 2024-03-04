@@ -1,0 +1,10 @@
+Builder,Project,Location,Sector,Floor,Price,Min. Size,Max. Size,AR,Leased Brand/ Type,LG,Lock-in Period,Lease Period,Possession Period,CA,Payment Plan,Min. Investment,AR Adjusted,Lease Adjusted,ROI
+Bhutani Infra,Avenue 62,Noida,Sector 62,GF,"30,000",100,,12%,Lockable,NA,,,20,,,3000000,2400000,NA,#VALUE!
+Bhutani Infra,Avenue 62,Noida,Sector 62,4F,"18,990",200,,12%,Retail,138,,,20,,,3798000,3038400,331200,10.90%
+Bhutani Infra,Cyberthum,Noida,Sector 140,UGF,"21,000",100,,12%,Retail,150,,,18,,,2100000,1722000,180000,10.45%
+Bhutani Infra,Avenue 62,Noida,Sector 62,1F,"27,000",100,,12%,Retail,175,,,20,,50:25:25,2700000,2160000,210000,9.72%
+Bhutani Infra,City-Center 150,Noida,Sector 150,LG,"27,000",100,,12%,High-street,175,,,5,,,2700000,2565000,210000,8.19%
+Spectrum,Spectrum@Metro,Noida,Sector 75,3F,"16,000",220,,NA,,100,,,5,,,3520000,3344000,264000,7.89%
+Bhutani Infra,Techno Park,Noida,Sector 127,1F,"8,990",500,,NA,SNAPON,58,,,NA,,,4495000,NA,348000,7.74%
+Bhutani Infra,Alphathum,Noida,Sector 90,7F,"12,000",350,,NA,ALCOI,70,,,NA,,,4200000,NA,294000,7.00%
+Bhutani Infra,Alphathum,Noida,Sector 90,16F,"12,000",100,,NA,GEENTANJALI,70,,,NA,,,1200000,NA,84000,7.00%
