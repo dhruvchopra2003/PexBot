@@ -116,11 +116,11 @@ import openai
 import csv
 import os
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # import schedule
 
-load_dotenv()
+#load_dotenv()
 try:
     openai.api_key = os.getenv("OPENAI_API_KEY")
 except:
