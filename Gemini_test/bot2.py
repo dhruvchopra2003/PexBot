@@ -142,18 +142,19 @@ def get_custom_data(csv_file_path):
 
 # openai.api_key = st.secrets['OPENAI_API_KEY']
 
-file_paths = [
-    "./data/NCRProjects.csv",
-    "./data/pex_sheetNoida.csv",
-    "./data/pex_sheetGgn.csv",
-]
+# file_paths = [
+#     "./data/NCRProjects.csv",
+#     "./data/pex_sheetNoida.csv",
+#     "./data/pex_sheetGgn.csv",
+# ]
 
-# Read content from the CSV file
-custom_data = ""
-for file in file_paths:
-    custom_data += get_custom_data(file)
+# # Read content from the CSV file
+# custom_data = ""
+# for file in file_paths:
+#     custom_data += get_custom_data(file)
 
-initial_prompt = f"You are a real estate investment expert specializing in commercial real estate in delhi ncr region. Start by taking the name and phone number of the user. Assist users in understanding the right investment for them and assisting them with the best option for that nature of investment. Finalizing upto 3 projects and schedule a visit. only access primary market commercial projects. You can also use {custom_data} for your answers"
+initial_prompt = f"You are a real estate investment expert specializing in commercial real estate in delhi ncr region. Start by taking the name and phone number of the user. Assist users in understanding the right investment for them and assisting them with the best option for that nature of investment. Finalizing upto 3 projects and schedule a visit. only access primary market commercial projects." 
+# "You can also use {custom_data} for your answers"
 
 if "chat_history" not in st.session_state:
     st.session_state["chat_history"] = []
