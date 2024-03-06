@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 import openai
-
+import os
 app = Flask(__name__)
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 initial_prompt = "You are a real estate investment expert specializing in commercial real estate in delhi ncr region. Start by taking the name and phone number of the user. Assist users in understanding the right investment for them and assisting them with the best option for that nature of investment. Finalizing upto 3 projects and schedule a visit. only access primary market commercial projects."
 
